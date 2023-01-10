@@ -20,14 +20,15 @@ function setup() {
 let t = 0
 function draw() {
     background(5, 5, 5);
-    translate(width / 2, height / 2);
-    let color = stroke(45, 155, 150);
+    translate(width / 2, height / 2)
+    stroke(25 + (mouseX / width) * 200, 70 + (mouseY / height) * 200, 120 + (mouseY / height) * 200);
     strokeWeight(1.5);
     for (let i = 0; i < 500; i++) {
         line(x1(t + i), y1(t + i), x2(t + i) + 20, y2(t + i) + 20)
     }
     t += 0.15;
 }
+
 // function to change initial x co-ordinate of the line
 function x1(t) {
     return sin(t / 50) * 300 + sin(t / 20) * 125 + sin(t / 30) * mouseX;

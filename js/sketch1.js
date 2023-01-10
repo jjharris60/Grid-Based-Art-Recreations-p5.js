@@ -21,9 +21,9 @@ let t = 0
 function draw() {
     background(5, 5, 5);
     translate(width / 2, height / 2);
-    stroke(45, 155, 150);
+    let color = stroke(45, 155, 150);
     strokeWeight(1.5);
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 500; i++) {
         line(x1(t + i), y1(t + i), x2(t + i) + 20, y2(t + i) + 20)
     }
     t += 0.15;

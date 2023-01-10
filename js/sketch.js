@@ -28,8 +28,8 @@ function draw() {
         for (i = length; i > 0; i--) {
             // sine wave
             y = cos(theta - (i * 0.05)) * amplitude;
-            fill(230 - (255 / length * i), 40, 30);
-            square(x, y + height * 0.5, 16);
+            fill(150 - (255 / length * i), 40, 30);
+            square(x, y + height * 0.3, 16);
         }
         theta += 0.2
         x = ((theta - offset) / maxAngle) * windowWidth;

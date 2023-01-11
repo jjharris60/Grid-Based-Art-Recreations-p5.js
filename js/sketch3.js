@@ -8,7 +8,7 @@ function setup() {
     noStroke()
     r = 250
     angle = 0
-    step = TWO_PI / 10
+    step = TWO_PI / 20
 }
 
 

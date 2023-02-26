@@ -45,6 +45,13 @@
 //     rectMode(CORNER)
 // }
 
+let img;
+function preload() {
+    img = loadImage('images/woodtexture.jpg');
+}
+
+console.log(img)
+
 function setup() {
     const CELL_SIZE = 100;
     createCanvas(600, 800);
@@ -68,7 +75,7 @@ function setup() {
 
             let numRectangles = int(random(1, 3)); // generate a random number of rectangles between 1 and 4
 
-            let rectWidth = random((CELL_SIZE / numRectangles * 1.5)); // calculate the width of each rectangle
+            let rectWidth = random(20, (CELL_SIZE / numRectangles)); // calculate the width of each rectangle
             let rectHeight = CELL_SIZE / numRectangles; // calculate the height of each rectangle
 
             let rectX = x; // set the x-coordinate of the first rectangle

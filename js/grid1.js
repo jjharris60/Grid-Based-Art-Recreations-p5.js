@@ -24,11 +24,11 @@ function setup() {
                 rect(x, y, CELL_SIZE, CELL_SIZE)
             }
             x += currentWidth;
-            rowCount++
+            rowCount++;
         }
-        y += currentHeight
-        columnCount++
-        x = 0
+        y += currentHeight;
+        columnCount++;
+        x = 0;
     }
 }
 function draw() {
